@@ -4,7 +4,7 @@ a) steps to run the code and get swagger
 
 1-create a virtiual environment and activate it
 
-    python3 -m venv api_env&&source api_env/bin/activate
+    python3 -m venv api_env && source api_env/bin/activate
     
 2-install requirements by below command
 
