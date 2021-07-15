@@ -16,8 +16,10 @@ a) steps to run the code and get swagger
 
 go to http://0.0.0.0:8081/docs  to view the swagger 
 
-b)
 use below api-endpoint url to get total cost of order by providing data in request body -->{ "order_items": [ { "name": "bread", "quantity": 2, "price": 2200 }, { "name": "butter", "quantity": 1, "price": 5900 } ], "distance": 1200, "offer": { "offer_type": "FLAT", "offer_value": 1000 } }
 
  test url --> http://0.0.0.0:8081/order_items/get_items_cost
+
+b) Description
+
 

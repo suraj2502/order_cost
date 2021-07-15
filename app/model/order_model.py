@@ -15,7 +15,7 @@ class order_items_schema(BaseModel):
     name: str =Field(
         None, title="The name of the item", max_length=300,min_length=1
     )
-    quantity: int = Field(...,gt=0,le=1000)
+    quantity: int = Field(...,gt=0,le=200)
     price:int=Field(...,gt=0,le=500000)
 
 
