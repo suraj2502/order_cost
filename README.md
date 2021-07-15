@@ -1,5 +1,6 @@
 # order_cost
 To run this project
+a) steps to run the code and get swagger
 
 1-create a virtiual environment and activate it
 
@@ -15,4 +16,9 @@ To run this project
     python3 main.py
 
 go to http://0.0.0.0:8081/docs  to view the swagger 
+
+b)
+use below api-endpoint url to get total cost of order by providing data in request body -->{ "order_items": [ { "name": "bread", "quantity": 2, "price": 2200 }, { "name": "butter", "quantity": 1, "price": 5900 } ], "distance": 1200, "offer": { "offer_type": "FLAT", "offer_value": 1000 } }
+
+    http://0.0.0.0:8081/order_items/get_items_cost
 
