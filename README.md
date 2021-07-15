@@ -1,6 +1,6 @@
 # order_cost
-To run this project
-a) steps to run the code and get swagger
+
+a) steps to run this project and get swagger for api
 
 1-create a virtiual environment and activate it by running below command
 
