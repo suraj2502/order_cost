@@ -28,8 +28,6 @@ class offer_schema(BaseModel):
     offer_type:status
     offer_value:int=Field(...,ge=0)
 
-class distance_schema(BaseModel):
-    distance:int=Field(...,ge=0,le=500000)
 
 class order_schema(BaseModel):
     order_items:List[order_items_schema]
