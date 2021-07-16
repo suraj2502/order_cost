@@ -23,7 +23,7 @@ class status(str,Enum):
     
 class offer_schema(BaseModel):
     offer_type:status
-    offer_value:int=Field(...,ge=0)
+    offer_value:int=Field(ge=0,default=0)
 
 
 class order_schema(BaseModel):
