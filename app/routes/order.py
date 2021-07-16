@@ -2,7 +2,7 @@ from typing import List,Optional
 from fastapi import APIRouter, Body
 from fastapi.encoders import jsonable_encoder
 from fastapi import Query
-from common_helper import ErrorResponseModel, ResponseModel
+from common_helper import ErrorResponseModel, ResponseModel,delivery_cost
 from fastapi import Request, Depends,Form
 from app.model.order_model import order_items_schema,offer_schema,order_schema,status,distance_schema
 from pydantic import BaseModel, Field
@@ -10,17 +10,6 @@ from enum import Enum
 
 order_router = APIRouter()
 
-def delivery_cost(distance):
-            cost = 0
-            if distance<=10000 :
-                cost+= 5000
-            elif distance<=20000:
-                cost += 10000
-            elif distance<= 50000:
-                cost += 50000
-            else:
-                cost += 100000
-            return cost
 
 
 @order_router.post("/get_items_cost")
