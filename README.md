@@ -28,7 +28,7 @@ constraints:
 
 quantity for any item should be less than 200 and greater than 0
 
-Distance should be given in meters and should be less than 500000 m.
+Distance should be given in meters and should be less than 500000 m,it is required.
 
 Offer type can only take two values- ("FLAT", "DELIVERY") and it is optional, declared offer_type schema as a enum. 
 
